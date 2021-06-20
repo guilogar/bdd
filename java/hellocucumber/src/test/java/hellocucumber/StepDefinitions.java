@@ -10,7 +10,6 @@ public class StepDefinitions {
 
     private Double radius;
     private Double area;
-    private final Double expectedArea = 78.53981633974483;
 
     @Given("un radio de valor 5.0")
     public void radius_value_five() {
@@ -22,8 +21,8 @@ public class StepDefinitions {
         this.area = Math.PI * Math.pow(this.radius, 2);
     }
 
-    @Then("el area es igual a 78.54")
-    public void area_value_equals_to() {
-        assertEquals(this.expectedArea, this.area);
+    @Then("el area es igual a {string}")
+    public void area_value_equals_to(String expectedAnswer) {
+        assertEquals(expectedAnswer, String.valueOf(this.area));
     }
 }
