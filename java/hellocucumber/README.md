@@ -9,3 +9,7 @@ mvn archetype:generate                      \
    "-Dpackage=hellocucumber"                  \
    "-Dversion=1.0.0-SNAPSHOT"                 \
    "-DinteractiveMode=false"
+
+## Verify installation
+
+mvn test
