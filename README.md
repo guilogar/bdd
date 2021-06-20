@@ -2,7 +2,7 @@
 
 ## NodeJS
 
-Install NodeJS 14.x
+Install NodeJS 10.x - 14.x https://nodejs.org/es/download/
 
 ```bash
 cd {root-project}/node
@@ -13,7 +13,7 @@ npm run report:html
 
 ## Python
 
-Install Python 3.9.x
+Install Python 3.x.x https://www.python.org/downloads/
 
 ```bash
 cd {root-project}/python
