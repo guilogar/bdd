@@ -45,7 +45,7 @@
             "line": 6,
             "name": "el area es igual a ~78.54 con un error absoluto menor que 0.1",
             "match": {
-              "location": "features\\steps\\circle.js:29"
+              "location": "features\\steps\\circle.js:28"
             },
             "result": {
               "status": "passed",
