@@ -3,16 +3,26 @@
 const should = require('should');
 const assert = require('assert');
 const { Given, When, Then } = require('cucumber');
-const { radiusArea } = require('../../src/circle-area.js');
+const { radiusArea } = require('../../src/circle-area');
+const { NegativeRadius } = require('../../src/exceptions/negative-radius');
 
 let globalRadius = 0;
 Given('un radio de valor {float}', function (radius) {
   globalRadius = radius;
-  assert(radius > 0);
+  assert(!isNaN(radius));
 });
 
 When('al calcular el area', function () {
   return;
+});
+
+When('al calcular el area, lanza una exception de tipo NegativeRadius', function () {
+  try {
+    const area = radiusArea(globalRadius);
+    assert(false);
+  } catch (NegativeRadius) {
+    assert(true);
+  }
 });
  
 Then('el area es igual a ~{float} con un error absoluto menor que {float}', function (value, absoluteErrorLine) {

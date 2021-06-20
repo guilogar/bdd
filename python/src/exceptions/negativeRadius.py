@@ -1,0 +1,2 @@
+class NegativeRadius(Exception):
+  pass
