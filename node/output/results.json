@@ -1,0 +1,58 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "circle",
+    "line": 1,
+    "id": "circle",
+    "tags": [],
+    "uri": "features\\circle.feature",
+    "elements": [
+      {
+        "id": "circle;calcular-area",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Calcular area",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "un radio de valor 5.0",
+            "match": {
+              "location": "features\\test\\circle.js:9"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "al calcular el area",
+            "match": {
+              "location": "features\\test\\circle.js:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "el area es igual a ~78.54 con un error absoluto menor que 0.1",
+            "match": {
+              "location": "features\\test\\circle.js:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
