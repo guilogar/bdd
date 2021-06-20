@@ -1,0 +1,23 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Example of cucumber application for NodeJs",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/cucumber/bin/cucumber -f json:output/results.json -f progress",
+    "test:run": "node ./node_modules/cucumber/bin/cucumber --tags=@run -f json:output/results.json -f progress",
+    "report:html": "./node_modules/.bin/custom-cucumber-report-generator -f output/results.json -i output/report-config.json"
+  },
+  "author": "Guillermo López García",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^3.0.0",
+    "cucumber-junit": "^1.7.1",
+    "cucumber-pretty": "^1.4.4",
+    "custom-cucumber-report-generator": "^0.0.4",
+    "should": "^13.2.3"
+  }
+}

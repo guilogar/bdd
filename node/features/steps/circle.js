@@ -13,6 +13,7 @@ Given('un radio de valor {float}', function (radius) {
 });
 
 When('al calcular el area', function () {
+  assert(true);
   return;
 });
 

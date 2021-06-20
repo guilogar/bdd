@@ -1,0 +1,93 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "circle",
+    "line": 1,
+    "id": "circle",
+    "tags": [],
+    "uri": "features\\circle.feature",
+    "elements": [
+      {
+        "id": "circle;calcular-area",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Calcular area",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "un radio de valor 5.0",
+            "match": {
+              "location": "features\\steps\\circle.js:10"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "al calcular el area",
+            "match": {
+              "location": "features\\steps\\circle.js:15"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "el area es igual a ~78.54 con un error absoluto menor que 0.1",
+            "match": {
+              "location": "features\\steps\\circle.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "circle;calcular-area-negativa",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Calcular area negativa",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "un radio de valor -5.0",
+            "match": {
+              "location": "features\\steps\\circle.js:10"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "al calcular el area, lanza una exception de tipo NegativeRadius",
+            "match": {
+              "location": "features\\steps\\circle.js:19"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
